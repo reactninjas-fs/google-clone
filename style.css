@@ -189,4 +189,8 @@ body {
         align-items: center;
         font-size: 10px;
     }
+
+    .header-container {
+        padding-top: 50px;
+    }
 }

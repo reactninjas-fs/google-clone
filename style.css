@@ -4,7 +4,10 @@ body {
 }
 
 .main-container {
-    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
 }
 
 .logo {
@@ -38,9 +41,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 230px;
     align-items: center;
     gap: 25px;
-    height: 500px;
+    height: 100%;
 }
 
 .search {
@@ -50,11 +54,11 @@ body {
 }
 
 .search input {
-    width: 500px;
+    width: 524px;
     border-radius: 25px;
     border: 1px solid #dfe1e5;
     outline-style: none;
-    padding: 12px;
+    padding: 13px;
     padding-left: 50px;
     font-size: 1rem;
 }
@@ -62,7 +66,7 @@ body {
 .fa-magnifying-glass {
     margin-right: -40px ;
     z-index: 1;
-    color: #7e858a;
+    color: #dadce0;;
 }
 
 #mic {
@@ -79,19 +83,23 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 250px;
+    width: 255px;
 }
 
 .button-area button {
+    background-color: #f8f9fa;
     padding: 10px;
     border-style: none;
     color: #3c4043;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 .button-area button:hover {
+    border: 1px solid rgba(161, 150, 150, 0.411);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
-    border-radius: 4px;
 }
 
 .credit-area {
@@ -123,4 +131,62 @@ body {
 #nine-dots img:hover {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 12px;
+}
+
+.footer-area {
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+.region {
+    padding-left: 30px;
+    border-bottom: 1px solid #dadce0;
+    font-size: 14px;
+    color: #70757a;
+}
+
+.link-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.left-links a{
+    padding: 15px;
+    color: #70757a;
+    text-decoration: none;
+}
+
+.left-links a:hover{
+    text-decoration: underline;
+}
+
+.right-links a {
+    padding: 15px;
+    color: #70757a;
+    text-decoration: none;
+}
+
+.right-links a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .search input {
+        width: 224px;
+    } 
+
+    .logo img {
+        height: 72px;
+    }
+
+    .link-area {
+        display: flex;
+        flex-direction: column;
+        line-height: 30px;
+        align-items: center;
+        font-size: 10px;
+    }
 }
